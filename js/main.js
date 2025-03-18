@@ -2,13 +2,13 @@
 
 var ballSize = 100
 
-
 function onBallClick(elBall){
-if(ballSize >= 400)ballSize = 50
+    var randNum = (getRandomIntInclusive(20, 40))
+if(ballSize >= 400)ballSize = 100 - randNum
 
     console.log(ballSize)
     console.log(elBall)
-    ballSize += 50
+    ballSize += randNum
     elBall.style.height = ballSize + 'px'
     elBall.style.width = ballSize + 'px'
     elBall.innerHTML = ballSize
