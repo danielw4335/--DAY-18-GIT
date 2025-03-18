@@ -1,10 +1,16 @@
 'use strict'
 
+var ballSize = 100
+
 
 function onBallClick(elBall){
+if(ballSize >= 400)ballSize = 50
+
+    console.log(ballSize)
     console.log(elBall)
-    elBall.style.width = "150px"
-    elBall.style.height = "150px"
-    elBall.innerHTML = 150
-    
+    ballSize += 50
+    elBall.style.height = ballSize + 'px'
+    elBall.style.width = ballSize + 'px'
+    elBall.innerHTML = ballSize
+
 }
