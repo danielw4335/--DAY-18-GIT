@@ -2,9 +2,9 @@
 
 var ballSize = 100
 
-function onBallClick(elBall){
+function onBallClick(elBall, maxDiameter){
     var randNum = (getRandomIntInclusive(20, 40))
-if(ballSize >= 400)ballSize = 100 - randNum
+if(ballSize >= maxDiameter)ballSize = 100 - randNum
 
     console.log(ballSize)
     console.log(elBall)
@@ -16,3 +16,5 @@ if(ballSize >= 400)ballSize = 100 - randNum
 elBall.style.background = getRandomColor()
 
 }
+
+
