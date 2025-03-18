@@ -13,4 +13,6 @@ if(ballSize >= 400)ballSize = 100 - randNum
     elBall.style.width = ballSize + 'px'
     elBall.innerHTML = ballSize
 
+elBall.style.background = getRandomColor()
+
 }
